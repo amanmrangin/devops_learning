@@ -2,15 +2,15 @@
 **DevOps** is a set of practices that combines software **Dev**elopment and IT **Op**erations, aims to shorten the SDLC and provide Continuous Delivery with quality. A successful DevOps implementation is achieved by set of Tools in following phases.
  
   #### Phases of Dev and Tools: 
-    Plan
-    Code: GitHub, BitBucket
-    ### Build: 
-    ### Test : Build Test
+    **Plan**:
+    **Code**: GitHub, BitBucket
+    **Build**: 
+    **Test** : Build Test
   #### Phases of Ops:
-    ### Release
-    ### Deploy
-    ### Operate
-    ### Monitor
+    **Release**:
+    **Deploy**:
+    **Operate**:
+    **Monitor**:
     
   #### DevOps Processes:
    ##### Continuous Delivery (CD)

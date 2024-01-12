@@ -14,7 +14,7 @@
     
   #### DevOps Processes:
   
-   ##### Continuous Delivery (CD)
+  **Continuous Delivery (CD)**:
     A practice that combines the practies of both Continuous Integration(CI) and Continous Deployment (CD). There are a few tools offer these practices implemented independently or combined.
     
     Continuous Integration (CI)
@@ -27,13 +27,15 @@
         -- Pull the sourcode from branch(es) of Git Repo, 
         -- Run **build** tools such as Maven, Ant, Grails, to **compile**, **run unit test-cases**, **run integration-tests**
         -- Run Code Analysis tools (Sonar, JFrog's XRay) to verify the quality of source code for programming standards, CodeCoverage by Unit Testcases, Scan for Vulnerabilities
-  
-  ##### Continuous Build
-  
-  ##### Continuous Deployment
+
+        **Continuous Deployment**
     - A process to
       -- Build the infrastructure of an environment(s) using configuration file consisting of Java versions, JVM Agent(s) , servers (Tomcat/Websphere)
       -- Deploy the  **code (artifact)**, external application-specific configuration (.properites, secrets, keys, certs etc) into target environments
+  
+  ##### Continuous Build
+  
+
   
   ##### Continuous Release 
  

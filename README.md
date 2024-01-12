@@ -3,10 +3,10 @@
 **DevOps** is a set of practices that combines software **Dev**elopment and IT **Op**erations, aims to shorten the SDLC and provide Continuous Delivery with quality. A successful DevOps implementation is achieved by set of Tools in following phases.
 
 ## Phases of Dev and Tools:
-    Plan:
-    Code: GitHub, BitBucket
-    Build:
-    Test: 
+    Plan: Uses a tool, JIRA, to follow the Agile practies to break down the business requirments into User Stories/Epics/Features that helps the developers to implement and testers to develop testcases to validate the implementation.
+    Code: Allows developers and testers to write and save the sourcecode and testcases into repositories in GitHub/BitBucket.
+    Build: A tool, Jenkins, with ability to integrate with any plugins/tools (Maven, Sonar) to compile, scan, find the quality in the sourcecode.
+    Test: A tool, Jenkins, to perform the automated testcases (JUnit, Selenium, TestNG) to validate the sourcecode.
 
 ## Phases of Ops and Tools:
     Release:
@@ -28,7 +28,7 @@
            - Mindful of the associated costs to Storage
            - Reduce the Log levels to control the flood
            - Mask/redact the sensitive data 
-           - Build Alerts to create Tickets based on events to get the attention from team(s) to respond
+           - Build Alerts to create Tickets  based on events/incidents to get the attention from team(s) to respond
            - Have Root Cause Analysis (RCA) on the events
 
 ## DevOps Processes:

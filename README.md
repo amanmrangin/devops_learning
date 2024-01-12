@@ -15,7 +15,9 @@
   #### DevOps Processes:
   
    ##### Continuous Delivery (CD)
-    ###### Continuous Integration (CI)
+    A practice that combines the practies of both Continuous Integration(CI) and Continous Deployment (CD). There are a few tools offer these practices implemented independently or combined.
+    
+    Continuous Integration (CI)
      A Process for
       - All Developers to
         -- Commit the source code and unit test cases into branches of Git Repository of SCM/VCS tools such as GitHub, BitBucket

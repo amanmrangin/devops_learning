@@ -1,49 +1,66 @@
-# devops_learning
+# DevOps_learning
+
 **DevOps** is a set of practices that combines software **Dev**elopment and IT **Op**erations, aims to shorten the SDLC and provide Continuous Delivery with quality. A successful DevOps implementation is achieved by set of Tools in following phases.
- 
-  #### Phases of Dev and Tools: 
-    **Plan**:
-    **Code**: GitHub, BitBucket
-    **Build**: 
-    **Test** : Build Test
-  #### Phases of Ops:
-    **Release**:
-    **Deploy**:
-    **Operate**:
-    **Monitor**:
-    
-  #### DevOps Processes:
-  
-  **Continuous Delivery (CD)**:
-    A practice that combines the practies of both Continuous Integration(CI) and Continous Deployment (CD). There are a few tools offer these practices implemented independently or combined.
-    
-    Continuous Integration (CI)
-     A Process for
-      - All Developers to
-        -- Commit the source code and unit test cases into branches of Git Repository of SCM/VCS tools such as GitHub, BitBucket
-        -- Create Pull Request to review the code
-        -- Approve Pull Request and Merge and Push the code into uch as GitHub or BitBucket etc
-      - CI servers such as Jenkins, TeamCity, CircleCI, GitHub Actions, BitBucket Pipeline, TravisCI 
-        -- Pull the sourcode from branch(es) of Git Repo, 
-        -- Run **build** tools such as Maven, Ant, Grails, to **compile**, **run unit test-cases**, **run integration-tests**
-        -- Run Code Analysis tools (Sonar, JFrog's XRay) to verify the quality of source code for programming standards, CodeCoverage by Unit Testcases, Scan for Vulnerabilities
 
-        **Continuous Deployment**
-    - A process to
-      -- Build the infrastructure of an environment(s) using configuration file consisting of Java versions, JVM Agent(s) , servers (Tomcat/Websphere)
-      -- Deploy the  **code (artifact)**, external application-specific configuration (.properites, secrets, keys, certs etc) into target environments
-  
-  ##### Continuous Build
-  
+## Phases of Dev and Tools:
 
-  
-  ##### Continuous Release 
- 
-    - A process to automatically 
-      -- create the **packaged** artifact (.jar, .war. ear), 
+    Plan:
+    Code: GitHub, BitBucket
+    Build:
+    Test: Build Test
+
+## Phases of Ops and Tools:
+
+    Release:
+    Deploy:
+    Operate:
+    Monitor:
+        
+        Provides **Observability** by instrumenting the systems (e.g.: Docker images, ) and applications (e.g.: Java Web) to collect the **metrics** (e.g.: NewRelic JVM Agent, DataDog JVM Agent, Contrast Access JVM Agent,) and **logs** (e.g. Splunk JVM Agent).
+        The Metrics from tools provides the Quantitative data to understand how the Infrastructure of System and application is behaving and eliminates the guess.
+        Splunk Log Management Tool: Allows searching in logs (syslogs, firewall logs, application-log4j, aws, database) in a centralized location (Splunk Log Server) that are collected from different sources (applications through JVM Agents, servers).
+        DataDog/Ciso App Dynamics/Newr Relic: Allows the technical people to search and trace 
+            - Applications: requests/response, page load, availability
+            - Web tracking (Google Analytics): User location, device type
+            - Infrastructure (AWS CloudWatch)
+            - System (CPU, Memory, Disk, Logs)            -
+            - learn the system performance under Stress/Load conditions, uptime, CPU load, on/off peak usages, availability period as per Service Level Agreement
+        Notes: 
+           - Expose the information enough to understand the behavior of system/applications/platforms/infrastructure
+           - Transmit/collect/store the information in a centralized location
+           - Mindful of the associated costs to store
+           - Reduce the Log levels to control the flood
+           - Mask/redact the sensitive data 
+           - Build Alerts to create Tickets based on events to get the attention from team(s) to respond
+           - Have Root Cause Analysis (RCA) on the events
+
+
+
+
+## DevOps Processes:
+
+    Continuous Delivery (CD): A practice that combines the practies of both Continuous Integration(CI) and Continous Deployment (CD). There are a few tools offer these practices implemented independently or combined to increase the velocity of developer by reducing the cycle time between build, test and deploy phases
+
+        Continuous Integration (CI): A Process for
+         - All Developers to
+            -- Commit the source code and unit test cases into branches of Git Repository of SCM/VCS tools such as GitHub, BitBucket
+            -- Create Pull Request to review the code
+            -- Approve Pull Request and Merge and Push the code into uch as GitHub or BitBucket etc
+         - CI servers such as Jenkins, TeamCity, CircleCI, GitHub Actions, BitBucket Pipeline, TravisCI
+            -- Pull the sourcode from branch(es) of Git Repo. A pre-configured WebHook in Git (e.g.: GitHub or BitBucket) and CI (e.g.: Jenkins) will trigger 
+            -- Run build tools such as Maven, Ant, Grails, to **compile**, **run unit test-cases**, **run integration-tests**
+            -- Run Code Analysis tools (Sonar, JFrog's XRay) to verify the quality of source code for programming standards, CodeCoverage by Unit Testcases, Scan for Vulnerabilities
+            -- create the **packaged** artifact (.jar, .war. ear), and Save/push into a **Artifactory Server** (e.g. JFrog Artifactory, Nexus, Trusted Repository)
+
+        Continuous Deployment (CD) : A process to automatically deploy the application(s) to an environment (Non-Production Environment, Production Environment)
+         - Build the infrastructure (servers, memory, load blancers, nodes etcc) of environment(s) using configuration file consisting of Java versions, JVM Agent(s) , servers (Tomcat/Websphere)
+        - Deploy the  **code (artifact)**, external application-specific configuration (.properites, secrets, keys, certs etc) into target environments
+
+**Continuous Build**
+
+# Continuous Release
+
+    - A process to automatically
+      -- create the **packaged** artifact (.jar, .war. ear),
       -- Save/push into a **Artifactory Server** (e.g. JFrog Artifactory, Nexus, Trusted Repository)
       -- **deploy** the artifact into a target environment(s)
-    
-    
-    
-

@@ -13,8 +13,9 @@
     **Monitor**:
     
   #### DevOps Processes:
+  
    ##### Continuous Delivery (CD)
-   ###### Continuous Integration (CI)
+    ###### Continuous Integration (CI)
      A Process for
       - All Developers to
         -- Commit the source code and unit test cases into branches of Git Repository of SCM/VCS tools such as GitHub, BitBucket
@@ -24,11 +25,14 @@
         -- Pull the sourcode from branch(es) of Git Repo, 
         -- Run **build** tools such as Maven, Ant, Grails, to **compile**, **run unit test-cases**, **run integration-tests**
         -- Run Code Analysis tools (Sonar, JFrog's XRay) to verify the quality of source code for programming standards, CodeCoverage by Unit Testcases, Scan for Vulnerabilities
+  
   ##### Continuous Build
+  
   ##### Continuous Deployment
     - A process to
       -- Build the infrastructure of an environment(s) using configuration file consisting of Java versions, JVM Agent(s) , servers (Tomcat/Websphere)
       -- Deploy the  **code (artifact)**, external application-specific configuration (.properites, secrets, keys, certs etc) into target environments
+  
   ##### Continuous Release 
  
     - A process to automatically 
